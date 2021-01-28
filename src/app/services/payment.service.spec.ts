@@ -32,11 +32,11 @@ describe('Service: Payment', () => {
   it('Should return success on payWithCard', () => {
     const service: PaymentService = TestBed.inject(PaymentService);
     const mockPaymentData = {
-      creditCardNumber: '1223232323232342',
-      cardHolder: 'Test',
+      creditCardNumber: '1234567890123456',
+      cardHolder: 'Field-Assignment',
       expirationDate: '2021-01-16T22:52:56.295Z',
       securityCode: '123',
-      amount: 2345,
+      amount: 1234,
     };
     const mockResponse = {
       status: 'success',

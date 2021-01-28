@@ -19,7 +19,7 @@
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-holder-name">Name on Card</label>
         <div class="col-sm-9">
-          <input class="form-control" type="text" formControlName="nameOnCard" placeholder="John Krane" [ngClass]="{ 'is-invalid': (formControls.nameOnCard.dirty || formControls.nameOnCard.touched) && formControls.nameOnCard.errors }">
+          <input class="form-control" type="text" formControlName="nameOnCard" placeholder="Assignment" [ngClass]="{ 'is-invalid': (formControls.nameOnCard.dirty || formControls.nameOnCard.touched) && formControls.nameOnCard.errors }">
           <div *ngIf="!formControls.nameOnCard.valid && (formControls.nameOnCard.dirty || formControls.nameOnCard.touched)" class="invalid-feedback">
               <div *ngIf="formControls.nameOnCard.errors" class="alert alert-danger">Invalid Cardholder Name.</div>
           </div>
@@ -28,7 +28,7 @@
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-number">Card Number</label>
         <div class="col-sm-9">
-          <input class="form-control" type="number" formControlName="cardNumber" placeholder="1234123412341234" [ngClass]="{ 'is-invalid': formControls.cardNumber.errors  && (formControls.cardNumber.dirty || formControls.cardNumber.touched)}">
+          <input class="form-control" type="number" formControlName="cardNumber" placeholder="1234567890123456" [ngClass]="{ 'is-invalid': formControls.cardNumber.errors  && (formControls.cardNumber.dirty || formControls.cardNumber.touched)}">
           <div *ngIf="!formControls.cardNumber.valid && (formControls.cardNumber.dirty || formControls.cardNumber.touched)" class="invalid-feedback">
               <div *ngIf="formControls.cardNumber.errors" class="alert alert-danger">Invalid Card Number.</div>
           </div>
@@ -40,7 +40,7 @@
           <div class="row">
             <div class="col-xs-3">
 
-              <select class="form-control col-sm-2" formControlName="expirationMonth" id="expiry-month" [ngClass]="{ 'is-invalid': !formControls.expirationMonth.valid && (formControls.expirationMonth.dirty || formControls.expirationMonth.touched) }">
+              <select class="form-control col-xs-3" formControlName="expirationMonth" id="expiry-month" [ngClass]="{ 'is-invalid': !formControls.expirationMonth.valid && (formControls.expirationMonth.dirty || formControls.expirationMonth.touched) }">
                 <option>Month</option>
                 <option value="01">Jan (01)</option>
                 <option value="02">Feb (02)</option>
